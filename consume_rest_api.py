@@ -1,11 +1,24 @@
 """
-a REST API to find links of recently unanswered python questions in stackOverflow
+REST API to find links of recently unanswered python/java/unix questions in stackOverflow
 
-#how to Call:-
+###How to Call:-
 python consume_rest_api.py --language=python --que
-python consume_rest_api.py -l=python -q
+python consume_rest_api.py -l=unix -q
 python consume_rest_api.py -l=java -q
 python consume_rest_api.py --help
+
+###Output:-
+C:\Users\amrikuma>python consume_rest_api.py -l=python -q
+
+Connecting:  http://api.stackexchange.com/2.2/questions?order=desc&sort=activity&site=stackoverflow
+Established..
+Parsing...
+
+Searching for tag:  python
+
+Python Un-answered links:-
+https://stackoverflow.com/questions/68153275/why-is-there-no-difference-between-variables-in-python
+https://stackoverflow.com/questions/68153211/allow-your-bot-to-read-multiple-values-of-a-variable-in-discord-py
 """
 
 import requests,argparse,sys
