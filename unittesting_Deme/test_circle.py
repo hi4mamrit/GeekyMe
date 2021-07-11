@@ -24,7 +24,7 @@ class TestCircleArea(TestCase):
     
   def test_type_error(self):
     #Raises TypeError for invalid types
-    self.AssertRaises(TypeError,circle_area,"amrit")
-    self.AssertRaises(TypeError,circle_area,2+3j)
-    self.AssertRaises(TypeError,circle_area,True)
+    self.assertRaises(TypeError,circle_area,"amrit")
+    self.assertRaises(TypeError,circle_area,2+3j)
+    self.assertRaises(TypeError,circle_area,True)
     
